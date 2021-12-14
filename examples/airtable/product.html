@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../public/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link rel="icon" href="./public/favicon.ico" />
     <title>Netlify</title>
   </head>
   <body>
@@ -24,22 +24,16 @@
     </nav>
     <section class="section">
       <div class="container">
-        <h1 class="title">Netlify Functions</h1>
-        <p class="subtitle">
-          Bellow a few functions examples about to get data with Netlify
-        </p>
-        <ul>
-          <li>
-            <a href="/examples/hello/">Hello World (with a timeout of 5s)</a>
-          </li>
-          <li>
-            <a href="/examples/api/">Basic API</a>
-          </li>
-          <li>
-            <a href="/examples/airtable/">Airtable CMS data fetch</a>
-          </li>
-        </ul>
+        <h1 class="title">Airtable CMS</h1>
+        <button onclick="history.back()" class="button is-primary block">
+          Go Back
+        </button>
+        <div id="result">
+          <h2 class="title is-4">Loading...</h2>
+        </div>
       </div>
     </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./product.js"></script>
 </html>
