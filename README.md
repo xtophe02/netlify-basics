@@ -12,3 +12,9 @@ fetch data for a single product
 
 **Survey**
 update data into airtable
+
+**Weather**
+API with for OpenWeatherAPI
+
+**Newsletter**
+subscribe for a newsletter
