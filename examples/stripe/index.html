@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../public/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./checkout.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./checkout.js" defer></script>
+    <title>Netlify</title>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <h1 class="title is-3 has-text-primary has-text-weight-bold">
+            Netlify
+          </h1>
+        </a>
+        <a class="navbar-item" href="/"> Home </a>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Stripe Payments</h1>
+        <h1 class="subtitle is-italic">
+          Use dummy card of 4242 4242 4242 4242
+        </h1>
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="level">
+                  <div class="level-left">
+                    <p class="title is-4">20 euros</p>
+                  </div>
+
+                  <div class="level-right">
+                    <p class="title is-4">T-shirt smith</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <form id="payment-form">
+              <div id="payment-element">
+                <!--Stripe.js injects the Payment Element-->
+              </div>
+              <button id="submit">
+                <div class="spinner hidden" id="spinner"></div>
+                <span id="button-text">Pay now</span>
+              </button>
+              <div id="payment-message" class="hidden"></div>
+            </form>
+          </div>
+        </div>
+
+        <div id="result"></div>
+      </div>
+    </section>
+  </body>
+</html>

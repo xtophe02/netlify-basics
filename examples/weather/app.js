@@ -32,7 +32,7 @@ async function logSubmit(event) {
     <nav class="level">
     <div class="level-item">
       <div>
-        <p class="heading">Coodinates</p>
+        <p class="heading">Coordinates</p>
         <p class="title is-5">
        
           <span class='icon'>
